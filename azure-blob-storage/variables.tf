@@ -1,7 +1,7 @@
 
 variable "resource_name_name" {
   type    = string
-  default = "example-group"
+  default = "hilda-group"
 }
 variable "location" {
   type    = string
@@ -16,10 +16,6 @@ variable "account_replication_type" {
   type = string
   default = "LRS"
 }
-variable "name" {
-  type = string
-  default = "examplestoracc"
-}
 variable "container_access_type" {
   type = string
   default = "private"
@@ -32,12 +28,12 @@ variable "type" {
   type = string
   default = "Block"
 }
-variable "source_zip" {
+variable "source_jpg" {
   type = string
-  default = "some-local-file.zip"
+  default = "kotek2.jpg"
 }
 variable "storage_blob_name" {
   type = string
-  default = "my-awesome-content.zip"
+  default = "zdjenciekota"
 }
 
