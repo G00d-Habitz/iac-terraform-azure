@@ -1,8 +1,4 @@
-terraform {
-  backend "local" {
-    path = "./terraform.tfstate"
-  }
-}
+
 terraform {
   required_providers {
     azurerm = {
@@ -12,9 +8,7 @@ terraform {
   }
 }
 
-# Ten kawałek kodu zapewania nam, ze azure nie łaczy się z żadną subskrypcją
 
 provider "azurerm" {
-  skip_provider_registration = true 
   features {}
 }
