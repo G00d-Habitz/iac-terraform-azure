@@ -4,7 +4,7 @@ resource "azurerm_resource_group" "example" {
 }
 
 resource "azurerm_storage_account" "example" {
-  name                     = var.name
+  name                     = "hildatomojkotek2"
   resource_group_name      = azurerm_resource_group.example.name
   location                 = azurerm_resource_group.example.location
   account_tier             = var.account_tier
@@ -22,5 +22,5 @@ resource "azurerm_storage_blob" "example" {
   storage_account_name   = azurerm_storage_account.example.name
   storage_container_name = azurerm_storage_container.example.name
   type                   = var.type
-  source                 = var.source_zip
+  source                 = var.source_jpg
 }
